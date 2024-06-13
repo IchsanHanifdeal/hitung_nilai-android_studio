@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
     android:gravity="center"
-    android:background="@drawable/gradient_background">
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -14,59 +17,76 @@
         android:textSize="24sp"
         android:gravity="center"
         android:layout_marginBottom="24dp"
-        android:textColor="#ffffff"
+        android:textColor="#FFF9D0"
         android:fontFamily="@font/montserrat_bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:gravity="center"
         android:text="Sign In"
         android:textSize="18sp"
-        android:textColor="#ffffff"
+        android:textColor="#FFF9D0"
         android:fontFamily="@font/montserrat_bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="24dp"
         android:gravity="center"
         android:text="Isikan data Anda!"
         android:textSize="18sp"
-        android:textColor="#ffffff"
+        android:textColor="#FFF9D0"
         android:fontFamily="@font/montserrat_bold"/>
 
-    <EditText
-        android:id="@+id/etNim"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="NIM Mahasiswa"
         android:layout_marginBottom="16dp"
-        android:padding="10dp"
-        android:background="@android:color/white"
-        android:elevation="4dp"
-        android:textColor="#000000"
-        android:fontFamily="@font/montserrat_bold"/>
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/white">
 
-    <EditText
-        android:id="@+id/etNama"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NIM Mahasiswa"
+            android:padding="10dp"
+            android:textColor="#FFF9D0"
+            android:textColorHint="#FFF9D0"
+            android:background="@drawable/rounded_edittext"
+            android:fontFamily="@font/montserrat_bold"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nama Lengkap"
         android:layout_marginBottom="24dp"
-        android:padding="10dp"
-        android:background="@android:color/white"
-        android:elevation="4dp"
-        android:textColor="#000000"
-        android:fontFamily="@font/montserrat_bold"/>
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/white">
 
-    <Button
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Lengkap"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_edittext"
+            android:textColorHint="#FFF9D0"
+            android:fontFamily="@font/montserrat_bold"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSignIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sign In"
-        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/colorPrimary"
         android:textColor="#ffffff"
-        android:fontFamily="@font/montserrat_bold"/>
+        android:fontFamily="@font/montserrat_bold"
+        style="@style/Widget.MaterialComponents.Button"
+        app:cornerRadius="8dp"/>
+
 </LinearLayout>

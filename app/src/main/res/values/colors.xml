@@ -2,4 +2,8 @@
     <color name="design_default_color_primary">#6200EE</color>
     <color name="design_default_color_primary_dark">#3700B3</color>
     <color name="design_default_color_accent">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="colorPrimary">#5AB2FF</color>
+    <color name="colorAccent">#CAF4FF</color>
 </resources>
