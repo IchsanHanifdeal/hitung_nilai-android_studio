@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/gradient_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menghitung Nilai Akhir"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/montserrat_bold"/>
+
+    <EditText
+        android:id="@+id/etNilaiKuis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Nilai Kuis"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/montserrat_bold"/>
+
+    <EditText
+        android:id="@+id/etNilaiPraktikum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Nilai Praktikum"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/montserrat_bold"/>
+
+    <EditText
+        android:id="@+id/etNilaiProjek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Nilai Projek"
+        android:layout_marginBottom="16dp"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/montserrat_bold"/>
+
+    <EditText
+        android:id="@+id/etNilaiTugas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Nilai Tugas"
+        android:layout_marginBottom="24dp"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:textColor="#000000"
+        android:fontFamily="@font/montserrat_bold"/>
+
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        android:background="@drawable/rounded_button"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/montserrat_bold"/>
+</LinearLayout>
