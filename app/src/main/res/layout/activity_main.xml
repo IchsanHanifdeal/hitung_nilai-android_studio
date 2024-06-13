@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:hint="NIM Mahasiswa"
             android:padding="10dp"
-            android:textColor="#FFF9D0"
+            android:textColor="#000000"
             android:textColorHint="#FFF9D0"
             android:background="@drawable/rounded_edittext"
             android:fontFamily="@font/montserrat_bold"/>
@@ -72,7 +72,7 @@
             android:layout_height="wrap_content"
             android:hint="Nama Lengkap"
             android:padding="10dp"
-            android:textColor="@color/white"
+            android:textColor="#000000"
             android:background="@drawable/rounded_edittext"
             android:textColorHint="#FFF9D0"
             android:fontFamily="@font/montserrat_bold"/>
